@@ -6,7 +6,7 @@ export function getAllExperts() {
     return async (dispatch: Dispatch<IExpertsActions>)=> {
         try {
             dispatch({type: IExportTypes.EXPERTS_LOADING})
-            const experts = await axios.get<IExperts[]>("http://localhost:5000/api/getAllExrerts")
+            const experts = await axios.get<IExperts[]>("https://organic-food-shop-server.vercel.app/api/getAllExrerts")
             dispatch({type: IExportTypes.EXPERTS_SUCCESS, payload: experts.data})
 
         } catch (e) {

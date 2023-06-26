@@ -70,7 +70,7 @@ const SingleProduct = () => {
                                 <button className="products-class">
                                     {product[0].productClass}
                                 </button>
-                                <img src={`http://localhost:5000/api/getImage/${product[0].img}`} height={"400"} alt="Product"/>
+                                <img src={`https://organic-food-shop-server.vercel.app/api/getImage/${product[0].img}`} height={"400"} alt="Product"/>
                             </div>
                             <div className="product-general-text">
                                 <h2 style={{fontSize: "40px"}} >{product[0].productName}</h2>

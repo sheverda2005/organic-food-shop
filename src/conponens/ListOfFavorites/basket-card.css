@@ -30,3 +30,12 @@
     color: #274C5B;
     padding: 25px 10px;
 }
+
+.basket-card-content-img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}

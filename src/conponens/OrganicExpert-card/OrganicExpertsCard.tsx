@@ -9,7 +9,7 @@ const OrganicExpertsCard: FC<IExperts> = ({img, work, name, facebook, twitter, i
     console.log(`localhost:5000/api/getImageExpert/${img}`)
     return (
             <div className="organic-experts-card">
-                <img src={`http://localhost:5000/api/getImageExpert/${img}`} height={"350"} alt="Product"/>
+                <img src={`https://organic-food-shop-server.vercel.app/api/getImageExpert/${img}`} height={"350"} alt="Product"/>
                 <div className="organic-experts-card-text">
                    <div className="organic-experts-card-titles">
                        <h5>{name + " " + last_name}</h5>

@@ -23,7 +23,7 @@ const ProductCard: FC<IProductCard> = ({productClass, img, productName, price , 
                         {productClass}
                     </button>
                     <div className="product-photo">
-                        <img src={`http://localhost:5000/api/getImage/${img}`}  height={"200px"} alt="Product"/>
+                        <img src={`https://organic-food-shop-server.vercel.app/api/getImage/${img}`}  height={"200px"} alt="Product"/>
                     </div>
                     <p className={"productsName"} >
                         <span>{productName}</span>
