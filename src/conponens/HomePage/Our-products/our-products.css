@@ -8,3 +8,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 426px) {
+    .our-products {
+        padding: 50px 0;
+    }
+}
