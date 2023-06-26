@@ -58,19 +58,25 @@
     .eco-friendly img {
         display: none;
     }
-    .eco-friendly-content {
+    .eco-friendly {
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .eco-fiendly-text-titles {
-        text-align: center;
+    .eco-friendly-content {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
     }
     .eco-fiendly-text {
         width: 100%;
-        margin: 0 20px;
+        padding: 20px 0 50px 90px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+    }
+    .eco-fiendly-text-titles {
+        text-align: center;
     }
 }
 
