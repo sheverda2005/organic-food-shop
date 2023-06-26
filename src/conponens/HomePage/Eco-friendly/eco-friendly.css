@@ -53,3 +53,22 @@
     line-height: 165.4%;
     color: #525C60;
 }
+
+@media (max-width: 1200px) {
+    .eco-friendly img {
+        display: none;
+    }
+    .eco-friendly-content {
+        justify-content: center;
+    }
+    .eco-fiendly-text-titles {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .eco-fiendly-text-titles h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}

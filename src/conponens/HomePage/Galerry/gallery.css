@@ -49,3 +49,18 @@
     line-height: 29px;
     color: #274C5B;
 }
+
+@media (max-width: 750px) {
+    .gallery-content {
+        flex-direction: column;
+    }
+    .gallery-content-card {
+        width: 100%;
+    }
+    .gallery {
+        padding: 0;
+    }
+    .gallery-content-card-content {
+        font-size: 20px;
+    }
+}

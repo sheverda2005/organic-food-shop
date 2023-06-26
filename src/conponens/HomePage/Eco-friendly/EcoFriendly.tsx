@@ -7,8 +7,10 @@ const EcoFriendly = () => {
                 <img src="/image/Eco-friendly.jpg" alt="Eco-friendly"/>
                 <div className="eco-friendly-content">
                     <div className="eco-fiendly-text">
-                        <h4 >Eco Friendly</h4>
-                        <h2  >Econis is a Friendly Organic Store</h2>
+                        <div className="eco-fiendly-text-titles">
+                            <h4>Eco Friendly</h4>
+                            <h2>Econis is a Friendly Organic Store</h2>
+                        </div>
                         <div className="eco-friendly-text-description">
                             <h5>Start with Our Company First</h5>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
