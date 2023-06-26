@@ -118,4 +118,43 @@
         width: 100%;
         text-align: start;
     }
+    .footer-content-bloc {
+        margin: 20px 0;
+    }
+    .footer-content {
+        padding-top: 50px;
+    }
+    .footer-content-title {
+        text-align: center;
+    }
+    .footer-content-text-info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer-content-text {
+        text-align: center;
+        margin: 20px;
+    }
+    .utulity-pages-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .utulity-pages-items li {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 562px) {
+    .footer-content-text-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .utulity-pages-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

@@ -32,3 +32,34 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media (max-width: 1332px) {
+    .news-card {
+        margin: 40px 0;
+    }
+    .news-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    .home-page-news-titles h2 {
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 730px) {
+    .home-page-news-information button {
+        display: none;
+    }
+    .home-page-news-information {
+        justify-content: center;
+    }
+    .home-page-news-titles {
+        width: 100%;
+        text-align: center;
+    }
+    .home-page-news {
+        padding: 50px 0;
+    }
+}

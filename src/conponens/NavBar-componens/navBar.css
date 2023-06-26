@@ -209,5 +209,8 @@ nav {
     .nav-items-logo-title h1 {
         font-size: 25px;
     }
+    nav {
+        padding: 25px 40px;
+    }
 }
 

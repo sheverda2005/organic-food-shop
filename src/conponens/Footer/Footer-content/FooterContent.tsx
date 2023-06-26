@@ -10,6 +10,7 @@ const FooterContent = () => {
                         <div className="footer-content-title">
                             Contact Us
                         </div>
+                        <div className="footer-content-text-info">
                             <div className="footer-content-text">
                                 <p>Emain</p>
                                 <span>needhelp@Organia.com</span>
@@ -22,6 +23,7 @@ const FooterContent = () => {
                                 <p>Address</p>
                                 <span>88 road, borklyn street, USA</span>
                             </div>
+                        </div>
                     </div>
                     <div className="footer-content-bloc logo-media">
                         <div className="footer-content-bloc-logo">
