@@ -4,7 +4,7 @@ const FooterSubscribe = () => {
     return (
         <div className={"footer-subscribe"} >
             <div className="footer-subscribe-content">
-                <h2 style={{color: "#fff", fontSize: '45px'}} >
+                <h2 className={"footer-subscribe-content-h2"} style={{color: "#fff", fontSize: '45px'}} >
                     Subscribe to
                    <p  className={"footer-subscribe-content-p"} > our Newsletter</p>
                 </h2>
