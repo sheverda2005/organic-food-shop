@@ -1,0 +1,91 @@
+.offer-banner {
+    background-color: #fff;
+    padding: 100px 200px;
+}
+
+.offer-banner-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.offer-banners-items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.offer-banners-item:nth-child(1) {
+    background-image: url("./img/offer-banner-1.jpg");
+    margin-right: 40px;
+
+}
+
+.offer-banners-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 500px;
+    height: 250px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.offer-banners-item:nth-child(2) {
+    background-image: url("./img/offer-banner-2.png");
+}
+
+.offer-banners-item p{
+    font-family: 'Yellowtail', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.offer-banners-item.second p{
+    color: #7EB693;
+}
+
+.offer-banners-item h2 {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 47px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-banners-item.second h2 {
+    color: #274C5B;
+}
+
+@media (max-width: 1440px) {
+    .offer-banners-item:nth-child(1) {
+        background-image: url("./img/offer-banner-1.jpg");
+        margin-right: 0px;
+    }
+    .offer-banners-item {
+        margin: 20px 0;
+        width: 700px;
+        min-width: 300px;
+    }
+    .offer-banner {
+        padding: 100px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .offer-banners-item {
+        margin: 10px 0;
+    }
+    .offer-banner {
+        padding: 50px 30px;
+    }
+}

@@ -1,0 +1,10 @@
+.page-header {
+    width: 100%;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 110px 0;
+}

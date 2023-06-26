@@ -1,0 +1,13 @@
+.all-products-content {
+    display: flex;
+    justify-content:  space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1250px;
+    flex-wrap: wrap;
+}
+
+.all-products {
+    padding: 100px 0;
+}

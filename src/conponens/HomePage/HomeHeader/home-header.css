@@ -1,0 +1,86 @@
+ header {
+    background-image: url("./img/home-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-content {
+    padding: 10% 100px;
+}
+
+.home-header-text p{
+    font-family: 'Yellowtail', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 49px;
+    color: #68A47F;
+}
+
+.home-header-text h1{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 82px;
+    color: #274C5B;
+}
+
+.home-page-header-button {
+    padding: 20px 30px;
+    background: #EFD372;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    color: #274C5B;
+    margin-top: 20px;
+}
+
+.home-page-header-button-svg {
+    width: 15px;
+    height: 15px;
+    background-color: #335B6B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.home-page-header-button-svg svg{
+    position: absolute;
+}
+
+.home-header-text .of-life {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 850px) {
+    .home-header-text h1{
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .header-content {
+        padding: 10% 40px;
+    }
+
+}
+
+ @media (max-width: 575px) {
+     .home-header-text h1{
+         font-size: 30px;
+         line-height: 42px;
+     }
+     .home-header-text p {
+         font-size: 20px;
+     }
+
+ }

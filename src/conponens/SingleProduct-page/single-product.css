@@ -1,0 +1,125 @@
+.single-product-container {
+    max-width: 1050px;
+    margin: 100px auto;
+}
+
+.products-class {
+    color: #ffffff;
+    background-color: #274C5B;
+    cursor: default;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.product-general-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-general-text {
+    margin-left: 50px;
+}
+
+.product-general-text-price {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 22px;
+    line-height: 34px;
+    margin: 10px 0px;
+    color: #274C5B;
+}
+
+.product-general-text p {
+    font-size: 16px;
+}
+
+.add-to-card {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.add-to-card p{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #274C5B;
+}
+
+.add-to-card input{
+    border: 2px solid #274C5B;
+    width: 100px;
+    height: 40px;
+    margin: 0px 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #274C5B;
+    padding: 28px;
+}
+
+.addition-info {
+    display: flex;
+    justify-content: center;
+    margin: 55px 0 30px 0;
+}
+
+.addition-info-button {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 34px;
+    text-align: center;
+    color: #274C5B;
+    padding: 15px 40px;
+    border-radius: 15px;
+    margin: 0px 10px;
+    background: #EFF6F1;
+    transition: all 0.3s;
+}
+
+.addition-info-button:hover {
+    color: #ffffff;
+    background: #274C5B;
+    transition: all 0.3s;
+}
+
+
+.addition-info-button.active {
+    color: #ffffff;
+    background: #274C5B;
+    transition: all 0.3s;
+}
+
+.addition-info-text {
+    margin: 50px 0 0 0;
+}
+
+.related_products {
+    margin: 150px 0  0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.related_product {
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+}

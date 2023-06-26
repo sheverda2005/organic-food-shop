@@ -1,0 +1,34 @@
+.home-page-news {
+    padding: 150px 0;
+    background-color: #ffffff;
+}
+
+.home-page-news-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0px auto;
+}
+
+.home-page-news-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home-page-news-titles {
+    width: 50%;
+}
+
+.home-page-news-titles h2{
+    font-size: 40px;
+}
+
+.news-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

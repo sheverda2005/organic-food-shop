@@ -1,0 +1,35 @@
+.what-we-offer-about-page {
+    background-color: #274C5B;
+    padding: 100px 50px;
+}
+
+
+.what-we-offer-about-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what-we-offer-products-items {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.what-we-offer-item p{
+    text-align: center;
+    margin: 15px 0px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.what-we-offer-item img{
+    overflow: hidden;
+    border-radius: 20px;
+}

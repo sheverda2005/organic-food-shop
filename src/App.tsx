@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
+import NavBar from "./conponens/NavBar-componens/NavBar";
+import {BrowserRouter} from "react-router-dom";
+import {useRouters} from "./useRouters";
+import Footer from "./conponens/Footer/Footer-component/Footer";
+import {useActions} from "./hooks/useActions";
+import NavBarFixed from "./conponens/NavBar-componens/NavBarFixed/NavBarFixed";
+import {IBasketItem} from "./types/basketTypes";
+import {useTypedSelector} from "./hooks/useTypedSelector";
 
 function App() {
+    const {getProducts, addBasketItems} = useActions()
+    const {items} = useTypedSelector(state => state.basket)
+    useEffect( ()=> {
+        addBasketItems()
+        getProducts()
+    }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <BrowserRouter>
+            <NavBarFixed/>
+            <NavBar/>
+            {useRouters()}
+            <Footer/>
+        </BrowserRouter>
     </div>
   );
 }

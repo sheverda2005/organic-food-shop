@@ -1,0 +1,76 @@
+.about-choose-us {
+    background-color: #F9F8F8;
+    padding: 150px 0;
+}
+
+.about-choose-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.about-us-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-inform-item {
+}
+
+.about-us-inform-item p {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 165.4%;
+    color: #525C60;
+    margin-top: 20px;
+}
+
+.button-about-us-text {
+    display: flex;
+    align-items: center;
+    background: #ECECEC;
+    border-radius: 49px;
+    cursor: default;
+    padding: 20px 40px;
+    margin-top: 25px;
+}
+
+.button-about-us-text span{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #274C5B;
+    margin-left: 5px;
+}
+
+.p-button-about-us-text {
+    margin-left: 30px;
+}
+
+.about-us-information-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-inform-item {
+    width: 48%;
+}
+
+.about-us-inform-item img{
+    border-radius: 20px;
+}
+
+.choose-us-cards {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}

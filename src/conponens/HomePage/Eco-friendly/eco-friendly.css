@@ -1,0 +1,55 @@
+.container-eco-friendly {
+    max-width: 1950px;
+    margin: 0px auto
+}
+
+.eco-friendly {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.eco-friendly img {
+    width: 50%;
+    max-height: 700px;
+}
+
+.eco-friendly-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.eco-fiendly-text{
+    background-color: #ffffff;
+    padding: 30px 30px 30px 52px;
+    border-radius: 30px;
+    width: 85%;
+    transform: translateX(-50px);
+}
+
+.eco-fiendly-text h2 {
+    font-size: 40px;
+}
+
+.eco-friendly-text-description {
+    margin-top: 30px;
+}
+
+.eco-friendly-text-description h5{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #274C5B;
+    margin-bottom: 15px;
+}
+
+.eco-friendly-text-description p{
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 165.4%;
+    color: #525C60;
+}

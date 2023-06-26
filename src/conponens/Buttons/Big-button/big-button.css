@@ -1,0 +1,41 @@
+.big-button {
+    padding: 20px 30px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    margin-top: 0px;
+}
+
+.big-button-svg {
+    width: 15px;
+    height: 15px;
+    background-color: #335B6B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: all 0.4s;
+}
+
+.big-button svg{
+    position: absolute;
+}
+
+.big-button:hover .big-button-svg {
+    transform: translateX(10px);
+    transition: all 0.4s;
+}
+
+@media (max-width: 574px) {
+    .big-button {
+        font-size: 16px;
+        padding: 16px 26px;
+    }
+
+}

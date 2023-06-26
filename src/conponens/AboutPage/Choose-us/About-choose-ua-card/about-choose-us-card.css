@@ -1,0 +1,40 @@
+.about-choose-us-card {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0px 20px;
+}
+
+.about-choose-us-card h5{
+    margin-top: 10px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    color: #274C5B;
+}
+
+.about-choose-us-card p{
+    margin-top: 10px;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 165.4%;
+    text-align: center;
+    color: #525C60;
+
+}
+
+.choose-us-img {
+    background-color: #F9F8F8;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

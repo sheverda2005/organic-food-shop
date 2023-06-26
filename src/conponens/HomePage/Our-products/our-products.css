@@ -1,0 +1,10 @@
+.our-products {
+    background-color: #F9F8F8;
+    padding: 100px 0px;
+}
+
+.our-products-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,121 @@
+.footer-content {
+    padding-top: 150px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.footer-content-blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content-bloc.contact-us {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    border-right: 1px solid #D5D5D5;
+    padding: 0px 50px;
+}
+
+.footer-content-title {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #274C5B;
+}
+
+
+.footer-content-text  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content-text p {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #525C60;
+    margin: 10px 0px;
+}
+
+.footer-content-text span {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #525C60;
+}
+
+.footer-content-bloc-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content-bloc-logo img{
+    margin-right: 5px;
+}
+
+.footer-content-bloc.logo-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 20px;
+}
+
+.footer-content-bloc.logo-media p {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 165.4%;
+    text-align: center;
+    color: #525C60;
+    margin-top: 20px;
+}
+
+.media-items {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer-content-bloc.utulity-pages {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    border-left: 1px solid #D5D5D5;
+    padding: 0 50px;
+}
+
+.utulity-pages-items {
+    margin-top: 30px;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 272.9%;
+    color: #525C60;
+}
+
+@media (max-width: 990px) {
+    .footer-content-blocks {
+        flex-direction: column;
+    }
+    .footer-content-bloc.contact-us {
+        border: 0;
+        width: 100%;
+        text-align: start;
+    }
+    .footer-content-bloc.utulity-pages {
+        border: 0;
+        width: 100%;
+        text-align: start;
+    }
+}

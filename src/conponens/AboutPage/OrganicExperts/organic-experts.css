@@ -1,0 +1,32 @@
+.organic-experts {
+    padding: 150px 0;
+    background-color: #ffffff;
+}
+
+.organic-experts-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organic-experts-content p{
+    margin-top: 20px;
+}
+
+.organic-experts-content-titles {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organic-exprerts-cards {
+    display: flex;
+    margin-top: 80px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+.we-do-creative {
+    padding: 150px 0;
+}
+
+.we-do-creative-content {
+    display: flex;
+    align-items: center;
+}
+
+.we-do-creative-text {
+    margin-left: 30px;
+    width: 40%;
+}
+
+.content-text-we-do-creative {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 165.4%;
+    color: #525C60;
+    margin-top: 25px;
+}
+
+.content-text-we-do-creative p{
+    margin-bottom: 30px;
+}
+
+.we-do-creative-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

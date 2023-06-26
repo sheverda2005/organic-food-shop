@@ -1,0 +1,75 @@
+.product-card {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 30px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid #ffffff;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card:hover {
+    transition: all 0.2s;
+    border: 1px solid #274C5B;
+}
+
+.product-photo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prodcutsClass {
+    padding: 5px 12px 6px;
+    background: #274C5B;
+    border-radius: 8px;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.productsName {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #274C5B;
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DEDDDD;
+}
+
+.productsName span {
+    text-align: start;
+}
+
+.products-price-rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.product-price {
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #274C5B;
+}
