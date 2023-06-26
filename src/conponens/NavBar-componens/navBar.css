@@ -210,10 +210,10 @@ nav {
         font-size: 25px;
     }
     nav {
-        padding: 20px 40px;
+        padding: 20px 30px;
     }
     .nav-bar-fixed.active {
-        padding: 15px 40px;
+        padding: 15px 30px;
     }
 }
 
