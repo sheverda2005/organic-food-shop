@@ -30,4 +30,20 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .we-do-creative-photo img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 875px) {
+    .we-do-creative-content {
+        flex-direction: column;
+    }
+    .we-do-creative-photo{
+        display: none;
+    }
 }

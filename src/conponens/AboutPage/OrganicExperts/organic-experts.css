@@ -30,3 +30,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 1100px) {
+    .organic-exprerts-cards {
+        flex-wrap: wrap;
+    }
+}

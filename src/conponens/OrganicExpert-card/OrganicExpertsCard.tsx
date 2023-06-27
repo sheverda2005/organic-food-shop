@@ -6,7 +6,7 @@ import TwitterSVG from "./SocialMediaSVG/TwitterSVG";
 import {IExperts} from "../../types/expertsTypes";
 
 const OrganicExpertsCard: FC<IExperts> = ({img, work, name, facebook, twitter, instagram, last_name}) => {
-    console.log(`localhost:5000/api/getImageExpert/${img}`)
+    console.log(`https://organic-food-shop-server.vercel.app/api/getImageExpert/${img}`)
     return (
             <div className="organic-experts-card">
                 <img src={`https://organic-food-shop-server.vercel.app/api/getImageExpert/${img}`} height={"350"} alt="Product"/>

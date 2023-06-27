@@ -74,3 +74,27 @@
     align-items: center;
     width: 90%;
 }
+
+@media (max-width: 1200px) {
+    .about-us-inform-item img{
+        height: 400px;
+    }
+}
+
+@media (max-width: 972px) {
+    .about-us-inform-item img{
+       display: none;
+    }
+}
+
+@media (max-width: 1347px) {
+    .choose-us-cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1240px) {
+    .choose-us-cards {
+        flex-direction: column;
+    }
+}

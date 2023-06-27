@@ -8,3 +8,21 @@
     background-position: center center;
     padding: 110px 0;
 }
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 90px;
+    }
+    .page-header h1{
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 426px) {
+    .page-header {
+        padding: 70px;
+    }
+    .page-header h1{
+        font-size: 50px;
+    }
+}
