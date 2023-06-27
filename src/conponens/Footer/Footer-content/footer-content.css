@@ -158,3 +158,12 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 426px) {
+    .footer-content-text {
+        margin: 10px;
+    }
+    .utulity-pages-items li {
+        margin: 8px;
+    }
+}

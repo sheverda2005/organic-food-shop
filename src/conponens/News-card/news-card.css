@@ -73,3 +73,12 @@
     line-height: 165.4%;
     color: #525C60;
 }
+
+@media (max-width: 550px) {
+    .news-card {
+        max-width: 90%;
+    }
+    .home-page-news-content {
+        width: 100%;
+    }
+}
