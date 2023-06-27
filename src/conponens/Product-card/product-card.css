@@ -73,3 +73,30 @@
     text-align: center;
     color: #274C5B;
 }
+
+@media (max-width: 426px) {
+    .product-card {
+        width: 80%;
+    }
+    .product-card a{
+        width: 95%;
+    }
+    .product-photo {
+        width: 100%;
+    }
+    .product-photo img {
+        height: 230px!important;
+    }
+}
+
+@media (max-width: 375px) {
+    .product-card {
+        width: 85%;
+    }
+    .product-card a{
+        width: 95%;
+    }
+    .product-photo {
+        width: 100%;
+    }
+}
