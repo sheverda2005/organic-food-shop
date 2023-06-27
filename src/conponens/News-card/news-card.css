@@ -74,9 +74,13 @@
     color: #525C60;
 }
 
+.news-card-information button {
+    margin-top: 20px;
+}
+
 @media (max-width: 550px) {
     .news-card {
-        max-width: 90%;
+        max-width: 95%;
     }
     .home-page-news-content {
         width: 100%;

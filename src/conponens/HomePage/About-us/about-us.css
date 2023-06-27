@@ -104,3 +104,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 550px) {
+    .about-text-content {
+        width: 93%;
+    }
+}
