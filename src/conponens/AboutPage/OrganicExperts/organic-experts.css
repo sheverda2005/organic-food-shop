@@ -24,6 +24,8 @@
 .organic-exprerts-cards {
     display: flex;
     margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-media {
@@ -34,5 +36,20 @@
 @media (max-width: 1100px) {
     .organic-exprerts-cards {
         flex-wrap: wrap;
+    }
+    .organic-experts {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 880px) {
+    .organic-experts-content-titles {
+        width: 90%;
+    }
+}
+
+@media (max-width: 426px) {
+    .organic-experts {
+        padding: 50px 0;
     }
 }

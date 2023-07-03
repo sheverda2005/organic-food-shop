@@ -17,8 +17,6 @@
     align-items: center;
 }
 
-.about-us-inform-item {
-}
 
 .about-us-inform-item p {
     font-family: 'Open Sans', serif;
@@ -29,6 +27,7 @@
     color: #525C60;
     margin-top: 20px;
 }
+
 
 .button-about-us-text {
     display: flex;
@@ -64,7 +63,11 @@
     width: 48%;
 }
 
-.about-us-inform-item img{
+.about-us-inform-item-photo {
+    width: 48%;
+}
+
+.about-us-inform-item-photo img{
     border-radius: 20px;
 }
 
@@ -76,14 +79,29 @@
 }
 
 @media (max-width: 1200px) {
-    .about-us-inform-item img{
+    .about-us-inform-item-photo img{
         height: 400px;
     }
 }
 
 @media (max-width: 972px) {
-    .about-us-inform-item img{
-       display: none;
+    .about-us-inform-item-photo {
+        display: none;
+    }
+    .about-us-inform-item {
+        width: 100%;
+    }
+    .about-us-inform-item h2 {
+        text-align: center;
+    }
+    .about-us-inform-item h4 {
+        text-align: center;
+    }
+    .about-choose-us {
+        padding: 100px 0;
+    }
+    .p-button-about-us-text {
+        margin-left: 0;
     }
 }
 
@@ -96,5 +114,24 @@
 @media (max-width: 1240px) {
     .choose-us-cards {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 521px) {
+    .about-us-inform-item h2 {
+        line-height: 50px;
+    }
+    .about-us-inform-item h4 {
+        line-height: 50px;
+
+    }
+}
+
+@media (max-width: 426px) {
+    .about-choose-us {
+        padding: 50px 0;
+    }
+    .choose-us-cards {
+        margin-top: 50px;
     }
 }

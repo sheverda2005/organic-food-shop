@@ -19,20 +19,20 @@ const OrganicExperts = () => {
                         <p>
                             Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                         </p>
-                        <div className="organic-exprerts-cards">
-                            {last_experts.map(expert => {
-                                return <OrganicExpertsCard
-                                    _id={expert._id}
-                                    img={expert.img}
-                                    name={expert.name}
-                                    last_name={expert.last_name}
-                                    work={expert.work}
-                                    facebook={expert.facebook}
-                                    instagram={expert.instagram}
-                                    twitter={expert.twitter}
-                                />
-                            })}
-                        </div>
+                    </div>
+                    <div className="organic-exprerts-cards">
+                        {last_experts.map(expert => {
+                            return <OrganicExpertsCard
+                                _id={expert._id}
+                                img={expert.img}
+                                name={expert.name}
+                                last_name={expert.last_name}
+                                work={expert.work}
+                                facebook={expert.facebook}
+                                instagram={expert.instagram}
+                                twitter={expert.twitter}
+                            />
+                        })}
                     </div>
                 </div>
             </div>

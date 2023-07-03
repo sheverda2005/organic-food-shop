@@ -38,7 +38,7 @@ const AboutChooseUs = () => {
                                 Filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing
                             </p>
                         </div>
-                        <div className="about-us-inform-item">
+                        <div className="about-us-inform-item-photo">
                             <img src="/image/Choose-us.jpg" height={'500px'} alt="Choose-us"/>
                         </div>
                     </div>

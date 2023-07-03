@@ -51,7 +51,9 @@ const WeDoCreative = () => {
                                 </div>
                             </div>
                         </div>
-                        <BigButton button_color={"#274C5B"} text_color={"#fff"} text={"Explore More"}/>
+                        <div className="big-button-content-we-do-creative">
+                            <BigButton button_color={"#274C5B"} text_color={"#fff"} text={"Explore More"}/>
+                        </div>
                     </div>
                 </div>
             </div>

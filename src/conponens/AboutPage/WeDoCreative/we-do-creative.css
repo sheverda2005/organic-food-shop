@@ -46,4 +46,33 @@
     .we-do-creative-photo{
         display: none;
     }
+    .we-do-creative {
+        padding: 100px 0;
+    }
+    .we-do-creative-text {
+        margin-left: 0;
+        width: 90%;
+    }
+    .we-do-creative-text h2 {
+        text-align: center;
+    }
+    .we-do-creative-text h4 {
+        text-align: center;
+    }
+    .big-button-content-we-do-creative {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .we-do-creative {
+        padding: 50px 0;
+    }
+    .we-do-creative-text h2 {
+        line-height: 50px;
+    }
+    .we-do-creative-text h4 {
+        line-height: 50px;
+    }
 }

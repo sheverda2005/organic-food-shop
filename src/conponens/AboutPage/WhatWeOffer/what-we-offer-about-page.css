@@ -38,3 +38,21 @@
 .what-we-offer-item {
     margin: 20px;
 }
+
+@media (max-width: 950px) {
+    .what-we-offer-products-items {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 525px) {
+    .what-we-offer-about-page {
+        padding: 50px 0;
+    }
+    .what-we-offer-about-page-content h4 {
+        line-height: 50px;
+    }
+    .what-we-offer-about-page-content h2 {
+        line-height: 50px;
+    }
+}
