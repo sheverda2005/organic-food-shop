@@ -3,6 +3,7 @@ import * as InfoButtons from "./infoButtonsActions"
 import * as BasketActions from "./basketActions"
 import * as AddToCardButton from "./addToCardActions"
 import * as ExpertsTypes from "./expertsActions"
+import * as MenuBurgerButtonTypes from "./menuBurgerActions/menuBurgerButtonActions"
 
 export default {
     ...ProductActions,
@@ -10,4 +11,5 @@ export default {
     ...BasketActions,
     ...AddToCardButton,
     ...ExpertsTypes,
+    ...MenuBurgerButtonTypes
 }

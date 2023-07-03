@@ -29,3 +29,21 @@
 .organic-expert-item {
     margin-top: 50px;
 }
+
+@media (max-width: 500px) {
+    .our-team-page-content {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .our-team-titles {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 426px) {
+    .our-team-titles {
+        text-align: center;
+    }
+}

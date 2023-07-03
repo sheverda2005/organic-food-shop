@@ -2,18 +2,22 @@ import React from 'react';
 import "./navBar.css"
 import {NavLink} from "react-router-dom";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
+import {useActions} from "../../hooks/useActions";
+import {menuBurger} from "../../store/reducers";
 const NavBar = () => {
     const {items} = useTypedSelector(state => state.basket)
+    const {menuBurgerButtonChange} = useActions()
+    const {menu_button_button} = useTypedSelector(state => state.menuBurger)
     return (
        <nav>
           <div className="container">
               <div className="nav-content">
                   <div className="nav-text-items">
                       <div className="logo-menu-burger">
-                          <div className="menu-burger-button">
-                              <div className="menu-burger-button-item"></div>
-                              <div className="menu-burger-button-item"></div>
-                              <div className="menu-burger-button-item"></div>
+                          <div onClick={()=> menuBurgerButtonChange()} className={`menu-burger-button ${menu_button_button.active ? "active": ""}`}>
+                              <div className="menu-burger-button-item one"></div>
+                              <div className="menu-burger-button-item two"></div>
+                              <div className="menu-burger-button-item tree"></div>
                           </div>
                           <NavLink to={'/'}>
                               <div className="nav-items-logo-title">

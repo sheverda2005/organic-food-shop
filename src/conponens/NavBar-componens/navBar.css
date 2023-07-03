@@ -157,6 +157,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
 .menu-burger-button-item {
@@ -167,6 +168,26 @@ nav {
 
 .menu-burger-button {
     display: none;
+}
+
+.menu-burger-button.active .menu-burger-button-item.two {
+    display: none;
+}
+
+.menu-burger-button.active .menu-burger-button-item.one {
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.menu-burger-button.active .menu-burger-button-item.tree {
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+}
+
+.menu-burger-button.active {
+    height: 4px;
+    transition: all 0.3s ease;
+
 }
 
 @media (max-width: 920px) {

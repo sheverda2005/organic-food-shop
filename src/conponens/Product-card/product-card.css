@@ -74,7 +74,7 @@
     color: #274C5B;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
     .product-card {
         width: 80%;
     }
