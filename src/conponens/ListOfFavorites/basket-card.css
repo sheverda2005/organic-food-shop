@@ -56,6 +56,7 @@
     }
     .basket-card-text {
         justify-content: center;
+        margin-bottom: 20px;
     }
     .basket-card-text h2 {
         text-align: center;
