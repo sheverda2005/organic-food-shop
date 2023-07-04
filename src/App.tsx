@@ -8,10 +8,12 @@ import {useActions} from "./hooks/useActions";
 import NavBarFixed from "./conponens/NavBar-componens/NavBarFixed/NavBarFixed";
 import {IBasketItem} from "./types/basketTypes";
 import {useTypedSelector} from "./hooks/useTypedSelector";
+import NavBarModal from "./conponens/NavBar-componens/NavBarModal/NavBarModal";
 
 function App() {
     const {getProducts, addBasketItems} = useActions()
     const {items} = useTypedSelector(state => state.basket)
+    const {menu_button_button} = useTypedSelector(state => state.menuBurger)
     useEffect( ()=> {
         addBasketItems()
         getProducts()
@@ -21,6 +23,7 @@ function App() {
         <BrowserRouter>
             <NavBarFixed/>
             <NavBar/>
+            <NavBarModal active={menu_button_button.active} />
             {useRouters()}
             <Footer/>
         </BrowserRouter>

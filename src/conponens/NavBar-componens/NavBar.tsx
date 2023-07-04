@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import {useActions} from "../../hooks/useActions";
 import {menuBurger} from "../../store/reducers";
+import NavBarModal from "./NavBarModal/NavBarModal";
 const NavBar = () => {
     const {items} = useTypedSelector(state => state.basket)
     const {menuBurgerButtonChange} = useActions()
