@@ -1,29 +1,30 @@
 import React, {FC} from 'react';
 import "./navBarModal.css"
 import {NavLink} from "react-router-dom";
+import {useActions} from "../../../hooks/useActions";
 
 interface NavBarModal {
     active: boolean
 }
 const NavBarModal: FC<NavBarModal> = ({active}) => {
-    console.log(active)
+    const {menuBurgerButtonChange} = useActions()
     return (
         <div className={`nav-bar-modal ${active ? "active": ""}`} >
             <ul>
                 <li>
-                    <NavLink className={"nav-link"} to={"/"}> Home</NavLink>
+                    <NavLink onClick={()=> menuBurgerButtonChange()} className={"nav-link"} to={"/"}> Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className={"nav-link"} to={"/about"}> About</NavLink>
+                    <NavLink onClick={()=> menuBurgerButtonChange()} className={"nav-link"} to={"/about"}> About</NavLink>
                 </li>
                 <li>
-                    <NavLink className={"nav-link"} to={"/shop"}>Shop</NavLink>
+                    <NavLink onClick={()=> menuBurgerButtonChange()} className={"nav-link"} to={"/shop"}>Shop</NavLink>
                 </li>
                 <li>
-                    <NavLink className={"nav-link"} to={"/our-team"}>Team</NavLink>
+                    <NavLink onClick={()=> menuBurgerButtonChange()} className={"nav-link"} to={"/our-team"}>Team</NavLink>
                 </li>
                 <li>
-                    <NavLink className={"nav-link"} to={"/news"}>News</NavLink>
+                    <NavLink onClick={()=> menuBurgerButtonChange()}  className={"nav-link"} to={"/news"}>News</NavLink>
                 </li>
             </ul>
         </div>
