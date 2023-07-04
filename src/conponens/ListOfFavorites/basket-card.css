@@ -16,6 +16,12 @@
     flex-direction: column;
 }
 
+.basket-card-text h2{
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+
 .basket-card-settings input{
     border: 2px solid #274C5B;
     width: 70px;
@@ -38,4 +44,23 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+    .basket-card-content {
+        flex-direction: column;
+    }
+    .basket-card-settings {
+        display: flex;
+        justify-content: center;
+    }
+    .basket-card-text {
+        justify-content: center;
+    }
+    .basket-card-text h2 {
+        text-align: center;
+    }
+    .basket-card-content-img {
+        margin-right: 0;
+    }
 }

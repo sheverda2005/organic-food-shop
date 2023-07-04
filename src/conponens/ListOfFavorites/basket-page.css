@@ -9,3 +9,39 @@
     flex-direction: column;
     width: 40%;
 }
+
+@media (max-width: 1400px) {
+    .basket-page-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1130px) {
+    .basket-page-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 930px) {
+    .basket-page-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .basket-page-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .basket-page-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 620px) {
+    .basket-page-content {
+        width: 90%;
+    }
+}
