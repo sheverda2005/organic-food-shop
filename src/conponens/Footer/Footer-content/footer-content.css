@@ -167,3 +167,11 @@
         margin: 8px;
     }
 }
+
+@media (max-width: 360px) {
+    .media-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

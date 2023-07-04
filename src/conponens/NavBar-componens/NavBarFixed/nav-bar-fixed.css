@@ -25,3 +25,10 @@
         padding: 15px 30px;
     }
 }
+
+@media (max-width: 426px) {
+    .nav-bar-fixed {
+        width: 100%;
+        opacity: 1;
+    }
+}

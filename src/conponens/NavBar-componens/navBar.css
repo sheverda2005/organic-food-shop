@@ -250,11 +250,6 @@ nav {
     }
 }
 
-@media (max-width: 520px) {
-    .nav-items-bscket {
-        margin-right: 20px;
-    }
-}
 
 @media (max-width: 460px) {
     .nav-items-logo-title h1 {
@@ -267,4 +262,11 @@ nav {
     nav {
         padding: 15px 30px;
     }
+}
+
+@media (max-width: 340px) {
+    .nav-items-bscket {
+        margin-left: -15px;
+    }
+
 }
