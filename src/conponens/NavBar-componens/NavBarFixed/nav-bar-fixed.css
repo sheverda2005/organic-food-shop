@@ -19,3 +19,9 @@
     margin-top: 0;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 545px) {
+    .nav-bar-fixed {
+        padding: 15px 30px;
+    }
+}

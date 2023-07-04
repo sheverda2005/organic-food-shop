@@ -46,9 +46,16 @@
 
 }
 
+@media (max-width: 545px) {
+    .nav-bar-modal.active {
+        margin-top: 0;
+    }
+}
+
+
 @media (max-width: 530px) {
     .nav-bar-modal ul li{
-        padding: 25px 25px 20px 16px;
+        padding: 25px 25px 20px 10px;
     }
 
 }
@@ -58,8 +65,10 @@
         width: 70%;
     }
     .nav-bar-modal ul li{
-        padding: 25px 25px 20px 14px;
+        padding: 25px 25px 20px 10px;
         font-size: 20px;
     }
-
+    .nav-bar-modal {
+        padding: 25px 25px 25px 15px;
+    }
 }
