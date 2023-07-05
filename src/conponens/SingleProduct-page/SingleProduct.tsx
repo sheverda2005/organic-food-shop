@@ -67,9 +67,11 @@ const SingleProduct = () => {
                     <div className={"single-product-content"} >
                         <div className="product-general-info">
                             <div className="product-image">
-                                <button className="products-class">
-                                    {product[0].productClass}
-                                </button>
+                                <div className="product-class-content">
+                                    <button className="products-class">
+                                        {product[0].productClass}
+                                    </button>
+                                </div>
                                 <img src={`https://organic-food-shop-server.vercel.app/api/getImage/${product[0].img}`} height={"400"} alt="Product"/>
                             </div>
                             <div className="product-general-text">

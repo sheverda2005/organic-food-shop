@@ -264,9 +264,9 @@ nav {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 375px) {
     .nav-items-bscket {
-        margin-left: -20px;
+        margin-left: -15px;
     }
 
 }
