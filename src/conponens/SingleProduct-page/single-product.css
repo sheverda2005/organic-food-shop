@@ -234,13 +234,17 @@
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 522px) {
     .related_product {
         justify-content: center;
         margin-top: 50px;
+        width: 100%;
+    }
+    .product-card {
+        padding: 25px 0px;
+        width: 90%;
     }
 }
-
 @media (max-width: 426px) {
     .add-to-card {
         flex-direction: column;
