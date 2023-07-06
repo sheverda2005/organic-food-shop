@@ -26,3 +26,12 @@
         font-size: 50px;
     }
 }
+
+@media (max-width: 410px) {
+    .page-header h1{
+        font-size: 40px;
+    }
+    .page-header {
+        padding: 60px 30px;
+    }
+}

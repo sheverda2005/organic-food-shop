@@ -82,14 +82,16 @@ const SingleProduct = () => {
                                     {product[0].detailInfo}
                                 </p>
                                 <div className="add-to-card">
-                                    <p>Quantity :</p>
-                                    <input defaultValue={1} onChange={(event)=> {
-                                        if (+event.target.value < 1) {
-                                            setQuantity(1)
-                                        } else {
-                                            setQuantity(event.target.value)
-                                        }
-                                    }} type="number"/>
+                                    <div className="quantity">
+                                        <p>Quantity :</p>
+                                        <input defaultValue={1} onChange={(event)=> {
+                                            if (+event.target.value < 1) {
+                                                setQuantity(1)
+                                            } else {
+                                                setQuantity(event.target.value)
+                                            }
+                                        }} type="number"/>
+                                    </div>
                                     <div onClick={()=> {
                                         localStorageProduct()
                                         addBasketItems()
