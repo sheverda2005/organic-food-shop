@@ -6,6 +6,7 @@ interface IChooseUsCard {
     title: string
     text: string
 }
+
 const AboutChooseUsCard: FC<IChooseUsCard> = ({title, text, svg}) => {
     return (
         <div className={"about-choose-us-card"}>

@@ -5,6 +5,7 @@ import ProductCard from "../../Product-card/ProductCard";
 import {useTypedSelector} from "../../../hooks/useTypedSelector";
 import {IProduct} from "../../../types/productTypes";
 import {NavLink} from "react-router-dom";
+import Spinner from "../../Spinner/Spinner";
 const WeOffer = () => {
     const {products, loading} = useTypedSelector(state => state.products)
     let last_products: IProduct[] = []
@@ -24,6 +25,7 @@ const WeOffer = () => {
                             <BigButton button_color={"#EFD372"} text_color={"#274C5B"} text={"View All Product"}/>
                         </NavLink>
                     </div>
+                    {loading ? <Spinner/> : null}
                     <div className="we-offer-cards">
                         {products.length == 0  ?  "":
                             last_products.map((product, index) => {

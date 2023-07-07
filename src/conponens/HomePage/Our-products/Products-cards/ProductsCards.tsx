@@ -3,6 +3,7 @@ import "./products-cards.css"
 import ProductCard from "../../../Product-card/ProductCard";
 import {useTypedSelector} from "../../../../hooks/useTypedSelector";
 import {IProduct} from "../../../../types/productTypes";
+import Spinner from "../../../Spinner/Spinner";
 
 const ProductsCards = () => {
     const {products, loading} = useTypedSelector(state => state.products)

@@ -5,6 +5,7 @@ import {useActions} from "../../hooks/useActions";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import OrganicExpertsCard from "../OrganicExpert-card/OrganicExpertsCard";
 import {addBasketItems} from "../../store/actions/basketActions";
+import Spinner from "../Spinner/Spinner";
 const OurTeamPage = () => {
     const {getAllExperts} = useActions()
     const {experts, loading} = useTypedSelector(state => state.experts)
@@ -22,6 +23,7 @@ const OurTeamPage = () => {
                     <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
                 </div>
             </div>
+            {loading ? <Spinner/>: null}
             <div className="our-experts-items">
                 {experts.length != 0 ? experts.map(expert => {
                     return <div className={"organic-expert-item"} >

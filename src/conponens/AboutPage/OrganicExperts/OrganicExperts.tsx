@@ -3,8 +3,9 @@ import "./organic-experts.css"
 import OrganicExpertsCard from "../../OrganicExpert-card/OrganicExpertsCard";
 import {useTypedSelector} from "../../../hooks/useTypedSelector";
 import {IExperts} from "../../../types/expertsTypes";
+import Spinner from "../../Spinner/Spinner";
 const OrganicExperts = () => {
-    const {experts} = useTypedSelector(state => state.experts)
+    const {experts, loading} = useTypedSelector(state => state.experts)
     let last_experts: IExperts[] = []
     if (experts.length != 0) {
         last_experts = [experts[0], experts[1], experts[2]]
@@ -20,6 +21,7 @@ const OrganicExperts = () => {
                             Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
                         </p>
                     </div>
+                    {loading ? <Spinner/> : null}
                     <div className="organic-exprerts-cards">
                         {last_experts.map(expert => {
                             return <OrganicExpertsCard

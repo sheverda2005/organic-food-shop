@@ -296,4 +296,7 @@
     .product-card-single .product-card {
         padding: 25px 0;
     }
+    .rating-star {
+        margin-top: 10px;
+    }
 }
