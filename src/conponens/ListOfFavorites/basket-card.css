@@ -46,6 +46,17 @@
     margin-right: 20px;
 }
 
+.basket-card-settings {
+    display: flex;
+    align-items: center;
+}
+
+.basket-card-settings .big-button {
+    margin: 0 20px;
+    padding: 16px 20px;
+    font-size: 16px;
+}
+
 @media (max-width: 500px) {
     .basket-card-content {
         flex-direction: column;

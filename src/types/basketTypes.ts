@@ -12,7 +12,8 @@ export interface IBasket {
 
 export enum IBasketActionType {
     "ADD_ITEMS"="ADD_ITEMS",
-    "CHANGE_ITEMS"='CHANGE_ITEMS'
+    "CHANGE_ITEMS"='CHANGE_ITEMS',
+    "DELETE_ITEM"="DELETE_ITEM"
 }
 
 interface addBasketItems {
@@ -20,4 +21,9 @@ interface addBasketItems {
     payload: IBasketItem[]
 }
 
-export type IBasketActions = addBasketItems
+interface deleteItem {
+    type: IBasketActionType.DELETE_ITEM
+    payload: string
+}
+
+export type IBasketActions = addBasketItems | deleteItem
