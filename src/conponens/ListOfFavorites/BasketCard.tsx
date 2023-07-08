@@ -19,7 +19,7 @@ const BasketCard: FC<IBasketCard> = ({productName, quantity, img, id}) => {
                 <div className="basket-card-text">
                     <h2 style={{fontSize: '30px'}} >{productName}</h2>
                     <div className="basket-card-settings">
-                        <input type="number" value={quantity} />
+                        <input type="number" defaultValue={quantity} />
                     </div>
                 </div>
             </div>
