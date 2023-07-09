@@ -115,6 +115,7 @@
     }
     .services-content-item p {
         text-align: center;
+        margin-right: 10px;
     }
     .services-content-item.right p {
         text-align: center;
