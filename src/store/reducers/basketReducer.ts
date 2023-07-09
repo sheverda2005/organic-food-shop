@@ -11,6 +11,8 @@ export const basketReducer = (state = initialState, action: IBasketActions): IBa
             return {...state, items: action.payload}
         case IBasketActionType.DELETE_ITEM:
             return state
+        case IBasketActionType.CHANGE_ITEMS:
+            return state;
         default:
             return state;
     }

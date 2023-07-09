@@ -68,3 +68,107 @@
     text-align: center;
     margin-top: 30px;
 }
+
+.services-page-img {
+    height: 700px;
+}
+
+
+@media (max-width: 980px) {
+    .services-page-img {
+        height: 500px;
+    }
+    .services-content-item {
+        margin-left: 20px;
+    }
+    .services-content-item.right {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .services-page-content {
+        padding: 100px 0 0 0;
+    }
+    .services-page-content-info {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 850px) {
+    .services-page-content-info {
+        flex-direction: column;
+    }
+    .services-content-item {
+        max-width: 95%;
+    }
+    .services-content-items {
+        order: 2;
+    }
+    .services-page-content h2 {
+        flex-direction: row;
+    }
+    .services-page-img {
+        height: 400px;
+    }
+    .services-content-item {
+        margin: 40px 20px;
+        align-items: center;
+    }
+    .services-content-item p {
+        text-align: center;
+    }
+    .services-content-item.right p {
+        text-align: center;
+    }
+    .services-content-item.right {
+        margin: 40px 20px;
+        text-align: center;
+    }
+    .services-content-item.right h5{
+        text-align: center;
+        width: 100%;
+    }
+    .services-content-item h5 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    .services-content-item {
+        margin: 20px;
+    }
+
+    .services-content-item.right {
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 623px) {
+    .services-page-content h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .services-page-content h2 {
+       display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .everyday-fresh-content p {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+    .everyday-fresh {
+        padding: 50px 0 200px 0;
+    }
+    .services-page-img {
+        height: 350px;
+    }
+    .services-page-content {
+        padding: 50px 0 0 0;
+    }
+    .services-page-content-info {
+        margin-bottom: 50px;
+    }
+}

@@ -27,7 +27,7 @@ const ServicesPage = () => {
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis</p>
                         </div>
                     </div>
-                    <img src="/image/Services_photo.png" alt="Services" height={"700px"}/>
+                    <img className={"services-page-img"} src="/image/Services_photo.png" alt="Services"/>
                     <div className="services-content-items">
                         <div className="services-content-item right">
                             <h5>Agricultural Services</h5>

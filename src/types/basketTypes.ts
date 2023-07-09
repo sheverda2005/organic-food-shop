@@ -26,4 +26,8 @@ interface deleteItem {
     payload: string
 }
 
-export type IBasketActions = addBasketItems | deleteItem
+interface changeItem {
+    type: IBasketActionType.CHANGE_ITEMS
+}
+
+export type IBasketActions = addBasketItems | deleteItem | changeItem

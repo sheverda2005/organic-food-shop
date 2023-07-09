@@ -75,4 +75,7 @@
     .basket-card-content-img {
         margin-right: 0;
     }
+    .delete-product-button .big-button {
+        margin: 0 0 0 20px;
+    }
 }

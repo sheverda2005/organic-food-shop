@@ -12,7 +12,7 @@ interface IBasketCard {
 }
 
 const BasketCard: FC<IBasketCard> = ({productName, quantity, img, id}) => {
-    const {deleteProduct} = useActions()
+    const {deleteProduct, changeProduct} = useActions()
     const {items} = useTypedSelector(state => state.basket)
     return (
         <div className={"basket-card"}>
@@ -24,7 +24,7 @@ const BasketCard: FC<IBasketCard> = ({productName, quantity, img, id}) => {
                 <div className="basket-card-text">
                     <h2 style={{fontSize: '30px'}}>{productName}</h2>
                     <div className="basket-card-settings">
-                        <input type="number" defaultValue={quantity}/>
+                        <input onChange={(e=> changeProduct(e, items, id))} type="number" defaultValue={quantity}/>
                        <div onClick={()=> deleteProduct(id, items)} className="delete-product-button">
                            <BigButton  button_color={"#274C5B"} text_color={"#fff"} text={"delete"}/>
                        </div>
