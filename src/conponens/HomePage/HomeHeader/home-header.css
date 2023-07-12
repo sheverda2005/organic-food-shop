@@ -55,6 +55,10 @@
     margin-left: 10px;
 }
 
+.header-content-button {
+    display: flex;
+}
+
 .home-page-header-button-svg svg{
     position: absolute;
 }
