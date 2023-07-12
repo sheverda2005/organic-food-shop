@@ -25,9 +25,11 @@ const HomeHeader = () => {
                              of life
                         </span>
                        </h1>
-                       <NavLink to={"/services"}>
-                           <BigButton button_color={"#EFD372"} text_color={"#274C5B"} text={"Explore now"} />
-                       </NavLink>
+                       <div className="header-content-button">
+                           <NavLink to={"/services"}>
+                               <BigButton button_color={"#EFD372"} text_color={"#274C5B"} text={"Explore now"} />
+                           </NavLink>
+                       </div>
                    </div>
                </div>
            </div>
