@@ -4,6 +4,7 @@ import * as BasketActions from "./basketActions"
 import * as AddToCardButton from "./addToCardActions"
 import * as ExpertsTypes from "./expertsActions"
 import * as MenuBurgerButtonTypes from "./menuBurgerActions/menuBurgerButtonActions"
+import * as PlaceAnOrderActions from "./placeAnOrder"
 
 export default {
     ...ProductActions,
@@ -11,5 +12,6 @@ export default {
     ...BasketActions,
     ...AddToCardButton,
     ...ExpertsTypes,
-    ...MenuBurgerButtonTypes
+    ...MenuBurgerButtonTypes,
+    ...PlaceAnOrderActions
 }

@@ -18,7 +18,6 @@ const HomePage = () => {
             <WeOffer/>
             <EcoFriendly/>
             <Gallery/>
-            <HomePageNews/>
         </div>
     );
 };

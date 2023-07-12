@@ -42,9 +42,6 @@ const NavBar = () => {
                             <li>
                                 <NavLink className={"nav-link"} to={"/our-team"}>Team</NavLink>
                             </li>
-                            <li>
-                                <NavLink className={"nav-link"} to={"/news"}>News</NavLink>
-                            </li>
                         </ul>
                     </div>
                     <div className="nav-items-products-search-basket">

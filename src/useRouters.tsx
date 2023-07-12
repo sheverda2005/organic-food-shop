@@ -7,6 +7,7 @@ import ServicesPage from "./conponens/ServicesPage/ServicesPage";
 import NewsPage from "./conponens/NewsPage/NewsPage";
 import BasketPage from "./conponens/ListOfFavorites/BasketPage";
 import OurTeamPage from "./conponens/OurTeamPage/OurTeamPage";
+import PlaceAnOrder from "./conponens/PlaceAnOrderPage/PlaceAnOrder";
 
 export const useRouters = () => {
     return (
@@ -19,6 +20,7 @@ export const useRouters = () => {
             <Route path={"/news"} element={<NewsPage/>} />
             <Route path={"/basket"} element={<BasketPage/>} />
             <Route path={"/our-team"} element={<OurTeamPage/>} />
+            <Route path={"/place-an-order"} element={<PlaceAnOrder/>} />
         </Routes>
     );
 }

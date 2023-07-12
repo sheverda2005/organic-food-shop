@@ -23,9 +23,6 @@ const NavBarModal: FC<NavBarModal> = ({active}) => {
                 <li>
                     <NavLink onClick={()=> menuBurgerButtonChange()} className={"nav-link"} to={"/our-team"}>Team</NavLink>
                 </li>
-                <li>
-                    <NavLink onClick={()=> menuBurgerButtonChange()}  className={"nav-link"} to={"/news"}>News</NavLink>
-                </li>
             </ul>
         </div>
     );

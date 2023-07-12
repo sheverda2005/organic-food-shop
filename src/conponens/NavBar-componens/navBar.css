@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-text-items {
-    width: 55%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 60%;
 }
 
 .nav-text-items li {
@@ -210,6 +210,7 @@ nav {
 }
 
 
+
 @media (max-width: 920px) {
     .nav-items-search input{
         display: none;
@@ -221,6 +222,9 @@ nav {
     .nav-text-items ul {
         width: 100%;
         margin: 0 30px;
+    }
+    .nav-text-items ul li{
+        margin: 0 20px;
     }
 }
 

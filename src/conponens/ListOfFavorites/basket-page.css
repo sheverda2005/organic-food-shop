@@ -10,6 +10,12 @@
     width: 40%;
 }
 
+.place-an-order {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 @media (max-width: 1400px) {
     .basket-page-content {
         width: 50%;
