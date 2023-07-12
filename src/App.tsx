@@ -24,7 +24,7 @@ function App() {
         <BrowserRouter>
             <NavBarFixed/>
             <NavBar/>
-            <Error message={message} active={active}/>
+            {active ?  <Error message={message} active={active}/>: null}
             <NavBarModal active={menu_button_button.active} />
             {useRouters()}
             <Footer/>
