@@ -38,7 +38,13 @@ export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
     return async (dispatch: Dispatch<IPlaceAnOrderActions>) => {
         const request = await axios.post("https://organic-food-shop-server.vercel.app/api/getOrderData", {
             basketItems: items,
-            user: userData
+            user: {
+                phone: userData.phone,
+                name: userData.name,
+                country: userData.country,
+                city: userData.city,
+                address: userData.address
+            }
         })
        dispatch({type: IPlaceAnOrderTypes.CLEAR_ORDER_DATA})
        dispatch({type: IPlaceAnOrderTypes.CONFIRM_TRUE})
