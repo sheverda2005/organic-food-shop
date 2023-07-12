@@ -13,6 +13,8 @@ export const basketReducer = (state = initialState, action: IBasketActions): IBa
             return state
         case IBasketActionType.CHANGE_ITEMS:
             return state;
+        case IBasketActionType.CLEAR_ITEMS:
+            return {...state, items: []}
         default:
             return state;
     }

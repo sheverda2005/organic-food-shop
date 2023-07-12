@@ -1,7 +1,7 @@
 import {Dispatch} from "redux";
 import {IPlaceAnOrder, IPlaceAnOrderActions, IPlaceAnOrderTypes} from "../../types/placeAnOrderTypes";
 import {ChangeEvent} from "react";
-import {IBasketItem} from "../../types/basketTypes";
+import {IBasketActions, IBasketActionType, IBasketItem} from "../../types/basketTypes";
 import axios from "axios";
 
 export function changePhone(event: ChangeEvent<HTMLInputElement>) {
@@ -35,7 +35,7 @@ export function changeAddress(event: ChangeEvent<HTMLInputElement>) {
 }
 
 export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
-    return async (dispatch: Dispatch<IPlaceAnOrderActions>) => {
+    return async (dispatch: Dispatch<IPlaceAnOrderActions | IBasketActions>) => {
         dispatch({type: IPlaceAnOrderTypes.LOADING_TRUE})
         const request = await axios.post("https://organic-food-shop-server.vercel.app/api/getOrderData", {
             basketItems: items,
@@ -47,9 +47,11 @@ export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
                 address: userData.address
             }
         })
-       dispatch({type: IPlaceAnOrderTypes.CLEAR_ORDER_DATA})
+        dispatch({type: IPlaceAnOrderTypes.CLEAR_ORDER_DATA})
         dispatch({type: IPlaceAnOrderTypes.LOADING_FALSE})
         dispatch({type: IPlaceAnOrderTypes.CONFIRM_TRUE})
+        dispatch({type: IBasketActionType.CLEAR_ITEMS})
+        localStorage.clear()
     }
 
 }

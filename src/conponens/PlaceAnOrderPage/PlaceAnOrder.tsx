@@ -15,6 +15,11 @@ const PlaceAnOrder = () => {
         window.scrollTo(0, 0)
         clearOrderData()
     }, [])
+    function confirmOrderBasket() {
+        if (!confirm) {
+            confirmOrder(items, placeAnOrder)
+        }
+    }
     return (
         <div className={"place-an-order-page"} >
             <div className="place-an-order-content">
@@ -68,7 +73,7 @@ const PlaceAnOrder = () => {
                         {loading ? <Spinner/> :
                             <div className="place-an-order-confirm-button">
                                 <div onClick={()=> {
-                                    confirmOrder(items, placeAnOrder)
+                                    confirmOrderBasket()
                                 }} className="place-an-order-confirm-button-item">
                                     <button disabled={confirm}
                                             style={{backgroundColor: confirm ? "#EFF6F1" : "#274C5B"}}

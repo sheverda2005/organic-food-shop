@@ -13,7 +13,8 @@ export interface IBasket {
 export enum IBasketActionType {
     "ADD_ITEMS"="ADD_ITEMS",
     "CHANGE_ITEMS"='CHANGE_ITEMS',
-    "DELETE_ITEM"="DELETE_ITEM"
+    "DELETE_ITEM"="DELETE_ITEM",
+    "CLEAR_ITEMS"="CLEAR_ITEMS"
 }
 
 interface addBasketItems {
@@ -30,4 +31,8 @@ interface changeItem {
     type: IBasketActionType.CHANGE_ITEMS
 }
 
-export type IBasketActions = addBasketItems | deleteItem | changeItem
+interface clearItems {
+    type: IBasketActionType.CLEAR_ITEMS
+}
+
+export type IBasketActions = addBasketItems | deleteItem | changeItem | clearItems
