@@ -1,0 +1,17 @@
+.error {
+    position: fixed;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0 39px 37px 0 rgba(195, 195, 195, 0.25);
+    padding: 20px 31px;
+}
+
+.error h2{
+    position: fixed;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0 39px 37px 0 rgba(195, 195, 195, 0.25);
+    padding: 10px 31px;
+    font-size: 20px;
+    color: crimson;
+}

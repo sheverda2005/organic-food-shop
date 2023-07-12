@@ -3,6 +3,7 @@ import {IPlaceAnOrder, IPlaceAnOrderActions, IPlaceAnOrderTypes} from "../../typ
 import {ChangeEvent} from "react";
 import {IBasketActions, IBasketActionType, IBasketItem} from "../../types/basketTypes";
 import axios from "axios";
+import {IErrorActions, IErrorTypes} from "../../types/errorTypes";
 
 export function changePhone(event: ChangeEvent<HTMLInputElement>) {
     return (dispatch: Dispatch<IPlaceAnOrderActions>) => {
@@ -35,7 +36,16 @@ export function changeAddress(event: ChangeEvent<HTMLInputElement>) {
 }
 
 export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
-    return async (dispatch: Dispatch<IPlaceAnOrderActions | IBasketActions>) => {
+    return async (dispatch: Dispatch<IPlaceAnOrderActions | IBasketActions | IErrorActions >) => {
+    // @ts-ignore
+        if (userData.phone == null |  userData.country.trim().length === 0 | userData.city.trim().length === 0  | userData.address.trim().length === 0  | userData.name.trim().length === 0  ) {
+            dispatch({type: IErrorTypes.GET_MESSAGE, payload: "All fields must be filled!"})
+            dispatch({type: IErrorTypes.ACTIVE_TRUE})
+            setTimeout(()=> {
+                dispatch({type: IErrorTypes.CLEAR_ERROR})
+            }, 3000)
+        return
+    } else {
         dispatch({type: IPlaceAnOrderTypes.LOADING_TRUE})
         const request = await axios.post("https://organic-food-shop-server.vercel.app/api/getOrderData", {
             basketItems: items,
@@ -52,8 +62,9 @@ export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
         dispatch({type: IPlaceAnOrderTypes.CONFIRM_TRUE})
         dispatch({type: IBasketActionType.CLEAR_ITEMS})
         localStorage.clear()
-    }
 
+    }
+    }
 }
 
 export function clearOrderData () {

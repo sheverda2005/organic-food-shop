@@ -6,6 +6,7 @@ import {addToCardReducer} from "./single-product-reducers/addToCardReducer";
 import {expertsReducer} from "./expertsReducer";
 import {menuBurgerButtonReducer} from "./menuBurger-reducers/menuBurgerButtonReducer";
 import {placeAnOrderReducer} from "./PlaceAnOrederReducer";
+import {errorReducer} from "./errorReducer";
 
 
 export const menuBurger = combineReducers({
@@ -18,7 +19,8 @@ export const rootReducer = combineReducers({
     addToCardButton: addToCardReducer,
     experts: expertsReducer,
     menuBurger: menuBurger,
-    placeAnOrder: placeAnOrderReducer
+    placeAnOrder: placeAnOrderReducer,
+    error: errorReducer
 })
 
 export type RootReducer = ReturnType<typeof rootReducer>
