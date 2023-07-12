@@ -6,7 +6,8 @@ const initialState: IPlaceAnOrder = {
     address: "",
     city: "",
     country: "",
-    confirm: false
+    confirm: false,
+    loading: false
 }
 
 export const placeAnOrderReducer = (state = initialState, action: IPlaceAnOrderActions): IPlaceAnOrder => {
@@ -34,6 +35,10 @@ export const placeAnOrderReducer = (state = initialState, action: IPlaceAnOrderA
             return {...state, confirm: true}
         case IPlaceAnOrderTypes.CONFIRM_FALSE:
             return {...state, confirm: false}
+        case IPlaceAnOrderTypes.LOADING_TRUE:
+            return {...state, loading: true}
+        case IPlaceAnOrderTypes.LOADING_FALSE:
+            return {...state, loading: false}
         default:
             return state;
     }

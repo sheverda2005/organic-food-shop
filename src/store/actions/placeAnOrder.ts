@@ -36,6 +36,7 @@ export function changeAddress(event: ChangeEvent<HTMLInputElement>) {
 
 export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
     return async (dispatch: Dispatch<IPlaceAnOrderActions>) => {
+        dispatch({type: IPlaceAnOrderTypes.LOADING_TRUE})
         const request = await axios.post("https://organic-food-shop-server.vercel.app/api/getOrderData", {
             basketItems: items,
             user: {
@@ -47,7 +48,8 @@ export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
             }
         })
        dispatch({type: IPlaceAnOrderTypes.CLEAR_ORDER_DATA})
-       dispatch({type: IPlaceAnOrderTypes.CONFIRM_TRUE})
+        dispatch({type: IPlaceAnOrderTypes.LOADING_FALSE})
+        dispatch({type: IPlaceAnOrderTypes.CONFIRM_TRUE})
     }
 
 }

@@ -5,6 +5,7 @@ export interface IPlaceAnOrder {
     city: string
     address: string
     confirm: boolean
+    loading: boolean
 }
 
 export enum IPlaceAnOrderTypes {
@@ -15,7 +16,9 @@ export enum IPlaceAnOrderTypes {
     "CHANGE_ADDRESS"="CHANGE_ADDRESS",
     "CLEAR_ORDER_DATA"="CLEAR_ORDER_DATA",
     "CONFIRM_TRUE"="CONFIRM_TRUE",
-    "CONFIRM_FALSE"="CONFIRM_FALSE"
+    "CONFIRM_FALSE"="CONFIRM_FALSE",
+    "LOADING_TRUE"="LOADING_TRUE",
+    "LOADING_FALSE"="LOADING_FALSE"
 }
 
 interface changePhone {
@@ -55,4 +58,23 @@ interface confirmFalse {
     type: IPlaceAnOrderTypes.CONFIRM_FALSE
 }
 
-export type IPlaceAnOrderActions = changePhone | changeCountry | changeCity | changeName | changeAddress | clearOrderData | confirmTrue | confirmFalse
+interface loadingTrue {
+    type: IPlaceAnOrderTypes.LOADING_TRUE
+}
+
+interface loadingFalse {
+    type: IPlaceAnOrderTypes.LOADING_FALSE
+}
+
+
+export type IPlaceAnOrderActions =
+    changePhone |
+    changeCountry |
+    changeCity |
+    changeName |
+    changeAddress |
+    clearOrderData |
+    confirmTrue |
+    confirmFalse |
+    loadingTrue |
+    loadingFalse
