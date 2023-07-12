@@ -54,6 +54,25 @@
     margin: 50px 0;
 }
 
+.place-an-order-confirm-button-item button {
+    margin: 0 10px;
+}
+
+
+.place-an-order-confirm-button-item  {
+   display: flex;
+}
+
+@media (max-width: 600px) {
+    .place-an-order-confirm-button-item  {
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-an-order-confirm-button-item button {
+        margin: 10px 0;
+    }
+}
+
 @media (max-width: 990px) {
     .place-an-order-card {
         max-width: 70%;

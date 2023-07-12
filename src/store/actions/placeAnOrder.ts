@@ -40,7 +40,14 @@ export function confirmOrder(items: IBasketItem[], userData: IPlaceAnOrder) {
             basketItems: items,
             user: userData
         })
-        console.log(request)
+       dispatch({type: IPlaceAnOrderTypes.CLEAR_ORDER_DATA})
+       dispatch({type: IPlaceAnOrderTypes.CONFIRM_TRUE})
     }
 
+}
+
+export function clearOrderData () {
+    return (dispatch: Dispatch<IPlaceAnOrderActions>) => {
+        dispatch({type: IPlaceAnOrderTypes.CLEAR_ORDER_DATA})
+    }
 }

@@ -3,14 +3,16 @@ import "./place-an-order.css"
 import BigButton from "../Buttons/Big-button/BigButton";
 import {useActions} from "../../hooks/useActions";
 import {useTypedSelector} from "../../hooks/useTypedSelector";
+import {NavLink} from "react-router-dom";
 
 const PlaceAnOrder = () => {
-    const {changePhone, changeName, changeCountry, changeCity, changeAddress, confirmOrder} = useActions()
-    const {phone, city, name, address, country} = useTypedSelector(state => state.placeAnOrder)
+    const {changePhone, changeName, changeCountry, changeCity, changeAddress, confirmOrder, clearOrderData} = useActions()
+    const {phone, city, name, address, country, confirm} = useTypedSelector(state => state.placeAnOrder)
     const {placeAnOrder} = useTypedSelector(state => state)
     const {items} = useTypedSelector(state => state.basket)
     useEffect(()=> {
         window.scrollTo(0, 0)
+        clearOrderData()
     }, [])
     return (
         <div className={"place-an-order-page"} >
@@ -66,7 +68,29 @@ const PlaceAnOrder = () => {
                             <div onClick={()=> {
                                 confirmOrder(items, placeAnOrder)
                             }} className="place-an-order-confirm-button-item">
-                                <BigButton button_color={"#274C5B"} text_color={"#fff"} text={"Confirm your order"}/>
+                                <button disabled={confirm}
+                                        style={{backgroundColor: confirm ? "#EFF6F1" : "#274C5B"}}
+                                        className={"big-button"}>
+                                    <div style={{color: confirm ? "#274C5B" : "#fff"}}>
+                                        {confirm ? "Confirmed" : "Confirm your order"}
+                                    </div>
+                                    {confirm ? "" :
+                                        <div className="big-button-svg">
+                                            <svg width="8" height="7" viewBox="0 0 9 8" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.47641 1.12891L7.87095 4.19342L4.47641 7.25794M7.39949 4.19342H0.516113"
+                                                    stroke="white" stroke-linecap="round"
+                                                    stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>}
+                                </button>
+                                {confirm ?
+                                    <NavLink to={"/"} >
+                                        <BigButton button_color={"#274C5B"} text_color={"#fff"} text={"Go to Home page"}/>
+                                    </NavLink>
+                                    :
+                                    ""}
                             </div>
                         </div>
                     </div>

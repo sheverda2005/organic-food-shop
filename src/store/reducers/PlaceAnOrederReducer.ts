@@ -5,7 +5,8 @@ const initialState: IPlaceAnOrder = {
     name: "",
     address: "",
     city: "",
-    country: ""
+    country: "",
+    confirm: false
 }
 
 export const placeAnOrderReducer = (state = initialState, action: IPlaceAnOrderActions): IPlaceAnOrder => {
@@ -19,7 +20,20 @@ export const placeAnOrderReducer = (state = initialState, action: IPlaceAnOrderA
         case IPlaceAnOrderTypes.CHANGE_CITY:
             return {...state, city: action.payload}
         case IPlaceAnOrderTypes.CHANGE_COUNTRY:
-            return {...state, country: action.payload} 
+            return {...state, country: action.payload}
+        case IPlaceAnOrderTypes.CLEAR_ORDER_DATA:
+            return {...state,
+                phone: null,
+                name: "",
+                address: "",
+                city: "",
+                country: '',
+                confirm: false
+            }
+        case IPlaceAnOrderTypes.CONFIRM_TRUE:
+            return {...state, confirm: true}
+        case IPlaceAnOrderTypes.CONFIRM_FALSE:
+            return {...state, confirm: false}
         default:
             return state;
     }
