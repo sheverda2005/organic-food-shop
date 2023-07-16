@@ -1,14 +1,14 @@
 import React, {useEffect} from 'react';
 import './App.css';
-import NavBar from "./conponens/NavBar-componens/NavBar";
+import NavBar from "./componens/NavBar-componens/NavBar";
 import {BrowserRouter} from "react-router-dom";
 import {useRouters} from "./useRouters";
-import Footer from "./conponens/Footer/Footer-component/Footer";
+import Footer from "./componens/Footer/Footer-component/Footer";
 import {useActions} from "./hooks/useActions";
-import NavBarFixed from "./conponens/NavBar-componens/NavBarFixed/NavBarFixed";
+import NavBarFixed from "./componens/NavBar-componens/NavBarFixed/NavBarFixed";
 import {useTypedSelector} from "./hooks/useTypedSelector";
-import NavBarModal from "./conponens/NavBar-componens/NavBarModal/NavBarModal";
-import Error from "./conponens/Error/Error";
+import NavBarModal from "./componens/NavBar-componens/NavBarModal/NavBarModal";
+import Error from "./componens/Error/Error";
 
 function App() {
     const {getProducts, addBasketItems} = useActions()

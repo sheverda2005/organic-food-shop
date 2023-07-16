@@ -1,13 +1,13 @@
 import {Route, Routes} from "react-router-dom";
-import HomePage from "./conponens/HomePage/HomePage";
-import AboutPage from "./conponens/AboutPage/AboutPage";
-import ShopPage from "./conponens/ShopPage/ShopPage";
-import SingleProduct from "./conponens/SingleProduct-page/SingleProduct";
-import ServicesPage from "./conponens/ServicesPage/ServicesPage";
-import NewsPage from "./conponens/NewsPage/NewsPage";
-import BasketPage from "./conponens/ListOfFavorites/BasketPage";
-import OurTeamPage from "./conponens/OurTeamPage/OurTeamPage";
-import PlaceAnOrder from "./conponens/PlaceAnOrderPage/PlaceAnOrder";
+import HomePage from "./componens/HomePage/HomePage";
+import AboutPage from "./componens/AboutPage/AboutPage";
+import ShopPage from "./componens/ShopPage/ShopPage";
+import SingleProduct from "./componens/SingleProduct-page/SingleProduct";
+import ServicesPage from "./componens/ServicesPage/ServicesPage";
+import NewsPage from "./componens/NewsPage/NewsPage";
+import BasketPage from "./componens/ListOfFavorites/BasketPage";
+import OurTeamPage from "./componens/OurTeamPage/OurTeamPage";
+import PlaceAnOrder from "./componens/PlaceAnOrderPage/PlaceAnOrder";
 
 export const useRouters = () => {
     return (
