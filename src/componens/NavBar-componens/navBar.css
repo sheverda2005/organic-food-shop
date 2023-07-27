@@ -210,13 +210,88 @@ nav {
 }
 
 
+.nav-items-search-modal-menu {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
-@media (max-width: 920px) {
-    .nav-items-search input{
-        display: none;
-        margin-right: 0;
+.nav-items-search {
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .nav-items-search {
+        width: 100%;
+    }
+
+}
+
+.nav-search-modal-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    width: 80%;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+}
+
+.nav-search-modal-menu.active {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    top: 70px;
+    width: 80%;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    color: #274C5B;
+}
+
+.find-products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .nav-items-products-search-basket {
+        width: 45%;
+    }
+    .nav-search-modal-menu.active {
+        width: 100%;
     }
 }
+
+@media (max-width: 990px) {
+    .nav-text-items ul {
+        display: none;
+    }
+    .menu-burger-button {
+        display: flex;
+    }
+    nav {
+        padding: 25px;
+        border-bottom: 0.5px solid #525C60;
+    }
+    .nav-items-products-search-basket {
+        width: 50%;
+    }
+}
+
+
 
 @media (max-width: 980px) {
     .nav-text-items ul {
@@ -228,28 +303,29 @@ nav {
     }
 }
 
-@media (max-width: 820px) {
-    .nav-text-items ul {
-        display: none;
-    }
-    .menu-burger-button {
-        display: flex;
-    }
-    nav {
-        padding: 25px;
-        border-bottom: 0.5px solid #525C60;
-    }
-}
 
 
-@media (max-width: 550px) {
-    .search-svg {
-        display: none;
+@media (max-width: 730px) {
+    .nav-items-products-search-basket {
+        width: 100%;
     }
     .nav-items-logo-title h1 {
         display: none;
     }
     .nav-items-logo-title img {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .search-svg {
+        display: none;
+    }
+    .nav-items-search input{
+        display: none;
+        margin-right: 0;
+    }
+    .nav-search-modal-menu.active {
         display: none;
     }
 }
@@ -274,3 +350,4 @@ nav {
     }
 
 }
+

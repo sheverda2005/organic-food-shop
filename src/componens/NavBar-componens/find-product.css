@@ -1,0 +1,39 @@
+.find-product-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.find-product-content p{
+    margin-left: 20px;
+    color: #335B6B;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.find-product {
+    width: 100%;
+    cursor: pointer;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.2s ease;
+}
+
+.find-product:hover {
+    width: 100%;
+    cursor: pointer;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    transition: all 0.2s ease;
+}
+
+.find-product-content-img {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

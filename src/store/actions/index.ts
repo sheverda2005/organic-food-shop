@@ -5,7 +5,7 @@ import * as AddToCardButton from "./addToCardActions"
 import * as ExpertsTypes from "./expertsActions"
 import * as MenuBurgerButtonTypes from "./menuBurgerActions/menuBurgerButtonActions"
 import * as PlaceAnOrderActions from "./placeAnOrder"
-
+import * as FindProducts from "./findProducts"
 export default {
     ...ProductActions,
     ...InfoButtons,
@@ -13,5 +13,6 @@ export default {
     ...AddToCardButton,
     ...ExpertsTypes,
     ...MenuBurgerButtonTypes,
-    ...PlaceAnOrderActions
+    ...PlaceAnOrderActions,
+    ...FindProducts
 }
