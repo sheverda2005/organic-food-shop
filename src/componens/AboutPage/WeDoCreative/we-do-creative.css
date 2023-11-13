@@ -9,6 +9,7 @@
 
 .we-do-creative-text {
     margin-left: 30px;
+    margin-top: -40px;
     width: 40%;
 }
 
@@ -19,7 +20,16 @@
     font-size: 14px;
     line-height: 165.4%;
     color: #525C60;
-    margin-top: 25px;
+    margin-top: 15px;
+}
+
+.we-do-create-p {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 59px;
+    color: #274C5B;
 }
 
 .content-text-we-do-creative p{

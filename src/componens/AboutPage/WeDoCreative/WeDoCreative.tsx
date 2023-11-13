@@ -1,6 +1,5 @@
 import React from 'react';
 import "./we-do-creative.css"
-import BigButton from "../../Buttons/Big-button/BigButton";
 
 
 const WeDoCreative = () => {
@@ -13,7 +12,7 @@ const WeDoCreative = () => {
                     </div>
                     <div className="we-do-creative-text">
                         <h4>About us</h4>
-                        <h2>We do Creative <p> Things for Success</p></h2>
+                        <h2>We do Creative <p className={"we-do-create-p"} > Things for Success</p></h2>
                         <div className="content-text-we-do-creative">
                              <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
                             <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
@@ -50,9 +49,6 @@ const WeDoCreative = () => {
                                     </h5>
                                 </div>
                             </div>
-                        </div>
-                        <div className="big-button-content-we-do-creative">
-                            <BigButton button_color={"#274C5B"} text_color={"#fff"} text={"Explore More"}/>
                         </div>
                     </div>
                 </div>

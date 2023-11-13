@@ -2,7 +2,6 @@
     background-color: #F9F8F8;
     border-radius: 20px;
     overflow: hidden;
-    cursor: pointer;
     transition: all 0.8s ease;
     margin: 20px 20px;
 }
