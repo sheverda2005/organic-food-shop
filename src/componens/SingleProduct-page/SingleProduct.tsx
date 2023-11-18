@@ -10,7 +10,7 @@ import ProductCard from "../Product-card/ProductCard";
 import Spinner from "../Spinner/Spinner";
 
 const SingleProduct = () => {
-    const {addToCardFalse, addToCardTrue} = useActions()
+    const {addToCardFalse, addToCardTrue, subscribeButtonChangeActive} = useActions()
     const {addedToCard} = useTypedSelector(state => state.addToCardButton)
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -21,7 +21,7 @@ const SingleProduct = () => {
     function scrollTo() {
         window.scrollTo(0, 200);
     }
-
+    
     const {id} = useParams()
     const {products, loading} = useTypedSelector(state => state.products)
     const {addBasketItems} = useActions()

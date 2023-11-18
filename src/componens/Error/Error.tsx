@@ -9,7 +9,7 @@ interface IError {
 const Error: FC<IError> = ({message, active}) => {
     return (
         <div className={`error ${active}`} >
-           <h2>{message}</h2>
+            <h2>{message}</h2>
         </div>
     );
 };

@@ -8,6 +8,7 @@ import {menuBurgerButtonReducer} from "./menuBurger-reducers/menuBurgerButtonRed
 import {placeAnOrderReducer} from "./PlaceAnOrederReducer";
 import {errorReducer} from "./errorReducer";
 import {findProductsReducer} from "./findProductsReducer";
+import {subscribeButtonReducer} from "./subscribeButtonReducer";
 
 
 export const menuBurger = combineReducers({
@@ -22,7 +23,8 @@ export const rootReducer = combineReducers({
     menuBurger: menuBurger,
     placeAnOrder: placeAnOrderReducer,
     error: errorReducer,
-    findProducts: findProductsReducer
+    findProducts: findProductsReducer,
+    subscribeButton: subscribeButtonReducer
 })
 
 export type RootReducer = ReturnType<typeof rootReducer>

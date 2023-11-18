@@ -6,6 +6,7 @@ import * as ExpertsTypes from "./expertsActions"
 import * as MenuBurgerButtonTypes from "./menuBurgerActions/menuBurgerButtonActions"
 import * as PlaceAnOrderActions from "./placeAnOrder"
 import * as FindProducts from "./findProducts"
+import * as SubscribeButton from "./subscribeButtonActions"
 export default {
     ...ProductActions,
     ...InfoButtons,
@@ -14,5 +15,6 @@ export default {
     ...ExpertsTypes,
     ...MenuBurgerButtonTypes,
     ...PlaceAnOrderActions,
-    ...FindProducts
+    ...FindProducts,
+    ...SubscribeButton
 }
