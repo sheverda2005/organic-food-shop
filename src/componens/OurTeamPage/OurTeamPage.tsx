@@ -20,7 +20,7 @@ const OurTeamPage = () => {
                 <div className="our-team-titles">
                     <h4>Team</h4>
                     <h2>Our Organic Experts</h2>
-                    <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                    <p>Our experts are professionals in their field, so they can guarantee the highest quality of work in the shortest possible time</p>
                 </div>
             </div>
             {loading ? <Spinner/>: null}

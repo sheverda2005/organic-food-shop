@@ -14,8 +14,8 @@ const WeDoCreative = () => {
                         <h4>About us</h4>
                         <h2>We do Creative <p className={"we-do-create-p"} > Things for Success</p></h2>
                         <div className="content-text-we-do-creative">
-                             <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-                            <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                            <p>At our store, we believe in the power of nature and know that each of us deserves the best. That's why we improve every day, working to create unique, organic products that will not only satisfy your taste buds, but also contribute to your health and active lifestyle.</p>
+                            <p>Our approach is based on creativity. We explore new ideas, experiment with flavors and ingredients, creating products that reflect our passion for organic living. Every item in our range is carefully selected and tested to ensure the highest quality and best results for our customers.</p>
                         </div>
                         <div className="we-do-creative-items">
                             <div className="about-us-content-item">

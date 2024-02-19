@@ -74,8 +74,9 @@
 .choose-us-cards {
     margin-top: 70px;
     display: flex;
-    align-items: center;
-    width: 90%;
+    align-items: stretch;
+    width: 100%;
+
 }
 
 @media (max-width: 1200px) {
@@ -105,7 +106,7 @@
     }
 }
 
-@media (max-width: 1347px) {
+@media (max-width: 1200px) {
     .choose-us-cards {
         flex-wrap: wrap;
     }
