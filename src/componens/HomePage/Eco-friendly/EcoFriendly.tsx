@@ -13,15 +13,15 @@ const EcoFriendly = () => {
                         </div>
                         <div className="eco-friendly-text-description">
                             <h5>Start with Our Company First</h5>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
+                            <p>The company began its work with the goal of improving people's lives by selling only proven products</p>
                         </div>
                         <div className="eco-friendly-text-description">
                             <h5>Learn How to Grow Yourself</h5>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
+                            <p>Develop with us, learn about healthy food, and grow</p>
                         </div>
                         <div className="eco-friendly-text-description">
                             <h5>Farming Strategies of Today</h5>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
+                            <p>The developed strategy for the introduction of agriculture allows us to grow effectively in this area</p>
                         </div>
                     </div>
                 </div>

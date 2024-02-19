@@ -32,8 +32,7 @@ const FooterContent = () => {
                             <h2 style={{fontSize: "40px"}} > Organic</h2>
                         </div>
                         <p>
-                            Simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum simply dummy text of the printing
+                            Selling organic products of high quality at an affordable price
                         </p>
                         <div className="media-items">
                                <MediaSVGItem url={"https://www.instagram.com/"} svg={<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

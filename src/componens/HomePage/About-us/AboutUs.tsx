@@ -22,8 +22,8 @@ const AboutUs = () => {
                             </h2>
                         </div>
                         <p className={'about-text-paragraph'}>
-                            Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the
-                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                            The company buys products only from proven farmers with a good reputation, which allows to keep customers always satisfied
+
                         </p>
                         <div className="about-us-content-items">
                             <div className="about-us-content-item">
@@ -48,7 +48,7 @@ const AboutUs = () => {
                                         Organic Foods Only
                                     </h5>
                                     <p>
-                                        Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        Only organic products are presented on the site
                                     </p>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ const AboutUs = () => {
                                         Quality Standards
                                     </h5>
                                     <p>
-                                        Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        We are responsible for the quality standard before buyers
                                     </p>
                                 </div>
                             </div>
